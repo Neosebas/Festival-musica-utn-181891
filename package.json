@@ -1,0 +1,30 @@
+{
+  "name": "trabajo-frontend-utn-comision-181891",
+  "version": "1.0.0",
+  "description": "Primer trabajo Utn 181891",
+  "type": "module",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neosebas/Festival-musica-utn-181891.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Sebastian Serruto @neosebas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neosebas/Festival-musica-utn-181891/issues"
+  },
+  "homepage": "https://github.com/Neosebas/Festival-musica-utn-181891#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.105.1"
+  }
+}
