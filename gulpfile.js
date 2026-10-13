@@ -4,14 +4,13 @@ import gulpSass from 'gulp-sass';
 
 const sass = gulpSass(dartSass);
 
-export function css (done) {
-    src('src/scss/app.scss')
+export function css () {
+    return src('src/scss/app.scss', {sourcemaps: true})
         .pipe( sass ().on('error', sass.logError) )
-        .pipe( dest('build/css') );
-    done();
+        .pipe( dest('build/css', {sourcemaps: '.'}) );
 }
 
 
 export function dev () {
-    watch('src/scss/**/*.scss', css);
+    return watch('src/scss/**/*.scss', {ignoreInitial: false}, css);
 }
