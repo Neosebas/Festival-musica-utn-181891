@@ -9,14 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body>
+<body id="inicio">
     <header class="header">
         <div class="contenedor contenido-header">
-            <h1>Festival Tecno & EDM</h1>
-            <nav class="navegacion-principal">
-                <a href="#">Lineup</a>
-                <a href="#">Galeria</a>
-                <a href="#">Entradas</a>
+            <h1>
+                <a href="#inicio">Festival Tecno & EDM</a>
+            </h1>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu-principal">
+                    ☰
+            </button>
+            <nav id="menu-principal" class="navegacion-principal">
+                <a href="#lineup">Lineup</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#entradas">Entradas</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
@@ -159,6 +169,11 @@
         </div> <!--.escenarios-contenedor -->
     </section>
 
+    <section id="galeria" class="galeria">
+        <h3>Galeria</h3>
+
+        <ul class="galeria-imagenes"></ul>
+    </section>
 
     <section id="entradas" class="contenedor-entradas">
     <h3>Entradas</h3>
@@ -227,5 +242,6 @@
         <p>Festival Tecno & EDM. Todos los derechos reservados.</p>
     </footer>
 
+    <script src="biuld/js/app.js"></script>
 </body>
 </html>
